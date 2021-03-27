@@ -15,5 +15,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(3050, () => {
-  console.log('Servidor operativo en pto 3000 por Localhost');
+  console.log('Servidor operativo en pto 3050 por Localhost');
 });
