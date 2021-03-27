@@ -1,4 +1,6 @@
-const http = require('http')
+const http = require('http');
+
+const port = parseInt(process.env.PORT) || 3050;
 
 const server = http.createServer((request, response) => {
   switch(request.url) {
@@ -14,6 +16,10 @@ const server = http.createServer((request, response) => {
   };
 });
 
-server.listen(3050, () => {
+server.listen(port, () => {
   console.log('Servidor operativo en pto 3050 por Localhost');
 });
+
+// server.on('error', error => {
+//   console.log(error);
+// })
